@@ -1,12 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>로그인</title>
-</head>
-<body>
+
+<%@ include file="common/header.jspf"%>
+<%@ include file="common/navigation.jspf"%>
 	<div class="container">
 		<h1>로그인페이지 입니다. 반갑습니다!</h1>
 		<pre>${errorMessage}</pre>
@@ -15,5 +12,4 @@
 				type="password" name="password"> <input type="submit">
 		</form>
 	</div>
-</body>
-</html>
+<%@ include file="common/footer.jspf" %>
