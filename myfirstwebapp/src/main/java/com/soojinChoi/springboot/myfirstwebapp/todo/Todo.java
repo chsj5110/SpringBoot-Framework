@@ -2,9 +2,26 @@ package com.soojinChoi.springboot.myfirstwebapp.todo;
 
 import java.time.LocalDate;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.Size;
 
+
+//Database (MySQL)
+//Static List of todos => Database (H2, MySQL)
+
+//JPA
+//Bean -> Database
+
+//Entity : Bean에 있는 데이터를 매핑하여 H2에 테이블을 만듦 name="" 을 쓰면 해당이름으로 테이블 생성 가능
+@Entity
 public class Todo {
+	
+	public Todo() {
+		
+	}
 
 	public Todo(int id, String username, String description, LocalDate targetDate, boolean done) {
 		super();
@@ -14,8 +31,11 @@ public class Todo {
 		this.targetDate = targetDate;
 		this.done = done;
 	}
-
+	
+	@Id
+	@GeneratedValue
 	private int id;
+	
 	private String username;
 	
 	@Size(min=10, message="Enter at least 10 characters")
