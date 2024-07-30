@@ -1,0 +1,10 @@
+1720451912172	Copy file
+1720451917132	Copy file
+1720456536898	Delete element
+1720457802202	Extract method 'getLoggedInUsername'
+1720458029096	Extract local variable 'username'
+1720458041329	Extract local variable 'password'
+1720458138875	Extract method 'createNewUser'
+1720458144440	Inline local variable 'username'
+1720458148209	Inline local variable 'password'
+1720614937587	Copy compilation unit
